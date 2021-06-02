@@ -4,7 +4,11 @@
 Get the weather on Mars! You pick the date.
 
 ## User Story
-As a user I want to access Mars' weather data in conjunction with images that correlate to those specific dates.
+```
+AS a user 
+I WANT to access Mars' weather data in conjunction with images that correlate to those specific dates.
+THEN I can put in a date (or choose a date) and get images
+```
 
 ## Our APIs
 * Insight: Mars Weather Service API
