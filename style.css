@@ -1,0 +1,20 @@
+/* Create font  */
+@font-face {
+    font-family: "CustomFont1";
+    src: url(death_star-webfont.woff);
+    src: url(death_star-webfont.woff2);
+    }
+
+.background {
+    background-color: black;
+}
+
+
+header {
+   font-size: xx-large;
+color:#a52a2a;
+font-family: 'CustomFont1';
+text-align: center;
+padding-top: 5%;
+
+}
