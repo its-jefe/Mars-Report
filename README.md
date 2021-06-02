@@ -12,9 +12,9 @@ THEN I can put in a date (or choose a date) and get images
 
 ## Our APIs
 * Insight: Mars Weather Service API
-
+  
 * Mars Rover Photos: Image data gathered by NASA's Curiosity, Opportunity, and Spirit rovers on Mars
-
+  
 * Tailwind CSS
 
 
