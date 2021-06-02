@@ -10,3 +10,7 @@ As a user I want to access Mars' weather data in conjunction with images that co
 * Insight: Mars Weather Service API
 * Mars Rover Photos: Image data gathered by NASA's Curiosity, Opportunity, and Spirit rovers on Mars
 * Tailwind CSS
+
+
+## Our wireframe 
+![DAILY MARS FORECAST](https://user-images.githubusercontent.com/77585253/120407544-5acf4b00-c31b-11eb-850e-f9c1043b6726.png)
