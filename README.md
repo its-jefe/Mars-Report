@@ -1,5 +1,7 @@
 # Project-1 : Mars Forecast
 
+## Deployed @ https://while-alive.github.io/Group-Project-1/
+
 ## Overview
 Get the weather on Mars! You pick the date.
 
@@ -11,6 +13,7 @@ THEN I can put in a date (or choose a date) and get images
 ```
 
 ## Our APIs
+https://api.nasa.gov/
 * Insight: Mars Weather Service API
   
 * Mars Rover Photos: Image data gathered by NASA's Curiosity, Opportunity, and Spirit rovers on Mars
