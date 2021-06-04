@@ -3,16 +3,13 @@
     font-family: "CustomFont1";
     src: url(./fonts/death_star-webfont.woff2);
     src: url(./fonts/death_star-webfont.woff);
-    }
-
-
+}
 
 body{
     background-image: url(space-1164579.png);
     max-height: 100%;
     max-width: 100%;
 }
-
 
 header {
    font-size: xx-large;
@@ -58,3 +55,10 @@ padding-top: 5%;
 
 .rover-input:hover  .rovers {background-color: #3e8e41;}
 
+header {
+    font-size: xx-large;
+    color:#a52a2a;
+    font-family: 'CustomFont1';
+    text-align: center;
+    padding-top: 5%;
+}
