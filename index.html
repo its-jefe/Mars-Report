@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Mars Forecast</title>
 
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="./assets/style.css" type="text/css">
 
@@ -20,6 +21,26 @@
 
 
 <div class="middle-box" >
+
+    <div class="date input">
+        <form action="/action_page.php">
+            <label for="Date-of">Enter Your Date Here:</label>
+            <input type="date" id="Date-of" name="Date-of">
+            <input type="submit" id="button">
+        </form>
+        </div>
+    
+    <div class="rover-input">
+        <div class="dropdown">
+            <button class="rovers">Rovers</button>
+            <div class="rover-content">
+                <a href="#">Curiosity</a>
+                <a href="#">Spirit</a>
+                <a href="#">Opportunity</a>
+            </div>
+        </div>
+    </div>
+
 
     <div class="date input">hi</div>
 
