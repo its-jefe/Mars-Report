@@ -1,8 +1,14 @@
+@tailwind base;
+
 /* Create font  */
 @font-face {
     font-family: "CustomFont1";
     src: url(./fonts/death_star-webfont.woff2);
     src: url(./fonts/death_star-webfont.woff);
+}
+
+* {
+    /* border: solid red 1px; */
 }
 
 body {
@@ -12,12 +18,9 @@ body {
 }
 
 header {
-    font-size: xx-large;
     color: #a52a2a;
     font-family: 'CustomFont1';
-    text-align: center;
     padding-top: 5%;
-
 }
 
 .dropdown {
@@ -59,12 +62,4 @@ header {
 
 .rover-input:hover .rovers {
     background-color: #3e8e41;
-}
-
-header {
-    font-size: xx-large;
-    color: #a52a2a;
-    font-family: 'CustomFont1';
-    text-align: center;
-    padding-top: 5%;
 }
