@@ -51,7 +51,7 @@ padding-top: 5%;
 
 .rover-content a:hover {background-color: #ddd;}
 
-.rover-input:hover  .rover-content {display: block;
+.rover-input:hover  .rover-content {display: block;}
 
 .rover-input:hover  .rovers {background-color: #3e8e41;}
 
