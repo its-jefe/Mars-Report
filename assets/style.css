@@ -3,9 +3,7 @@
     font-family: "CustomFont1";
     src: url(./fonts/death_star-webfont.woff2);
     src: url(./fonts/death_star-webfont.woff);
-    }
-
-
+}
 
 body{
     background-image: url(space-1164579.png);
@@ -13,12 +11,10 @@ body{
     max-width: 100%;
 }
 
-
 header {
-   font-size: xx-large;
-color:#a52a2a;
-font-family: 'CustomFont1';
-text-align: center;
-padding-top: 5%;
-
+    font-size: xx-large;
+    color:#a52a2a;
+    font-family: 'CustomFont1';
+    text-align: center;
+    padding-top: 5%;
 }
