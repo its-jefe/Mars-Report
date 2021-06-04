@@ -1,0 +1,60 @@
+/* Create font  */
+@font-face {
+    font-family: "CustomFont1";
+    src: url(./fonts/death_star-webfont.woff2);
+    src: url(./fonts/death_star-webfont.woff);
+    }
+
+
+
+body{
+    background-image: url(space-1164579.png);
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+header {
+   font-size: xx-large;
+color:#a52a2a;
+font-family: 'CustomFont1';
+text-align: center;
+padding-top: 5%;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.rovers {
+    background-color: white;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.rover-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.rover-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.rover-content a:hover {background-color: #ddd;}
+
+.rover-input:hover  .rover-content {display: block;
+
+.rover-input:hover  .rovers {background-color: #3e8e41;}
+
