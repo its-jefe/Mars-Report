@@ -1,12 +1,26 @@
-// function to generate display in 7 day boxes
+// var to store things
 
-    // var to hold the selected weather info using id-day1,day2 etc
+// click to select the rover
 
-    // fetch API for daily weather info 
+//var for rovers
 
-    // add the date parameter
+    // gets value of the rover input to make the call
 
-    // then function display
+// calls the json
 
 
+    // links to the icon emoji when we call the icon, + whatever code the weather is [0] is an array with icons.
 
+    // this will link the temperature url & gives us the temp number.
+
+    // this adds the weather description.
+
+    // this puts the icon inside icon element,
+
+    // puts weather description inside weather element.
+
+    // puts the temp inside the temp element.
+
+    // gets it to display.
+
+    // converts temperature
