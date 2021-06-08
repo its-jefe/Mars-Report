@@ -30,8 +30,8 @@ https://api.nasa.gov/
 
 
 ## Our wireframe 
-![DAILY MARS FORECAST](./assets/Mockup.png)
 
+![DAILY MARS FORECAST](./assets/images/Mockup.png)
 
 ### if we have more time
 ```
