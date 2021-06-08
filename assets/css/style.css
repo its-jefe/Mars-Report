@@ -3,8 +3,8 @@
 /* Create font  */
 @font-face {
     font-family: "CustomFont1";
-    src: url(./fonts/death_star-webfont.woff2);
-    src: url(./fonts/death_star-webfont.woff);
+    src: url(../fonts/death_star-webfont.woff2);
+    src: url(../fonts/death_star-webfont.woff);
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url(space-1164579.png);
+    background-image: url(../images/space-1164579.png);
     max-height: 100%;
     max-width: 100%;
 }
