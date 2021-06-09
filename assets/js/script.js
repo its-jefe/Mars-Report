@@ -69,9 +69,9 @@ fetch(weather).then(function (response) {
           let tempDivEl = document.createElement("div");
 
           let date = (data.soles[i].terrestrial_date);
-          let sol = "Sol: " + (data.soles[i].sol)
-          let high = "High: " + (data.soles[i].max_temp);
-          let low = "Low: " + (data.soles[i].min_temp);
+          let sol = "Sol: " + (data.soles[i].sol);
+          let high = "High: " + (data.soles[i].max_temp * 9/5 + 32).toFixed(1) + " °F";
+          let low = "Low: " + (data.soles[i].min_temp * 9/5 + 32).toFixed(1) + " °F";
           let atmosphere = "'./assets/images/" + (data.soles[i].atmo_opacity) + ".png'"; //sunny - cloudy - windy
 
           // setup the 3 elements of the individual weather panel buttons
