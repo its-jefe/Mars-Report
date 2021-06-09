@@ -8,9 +8,7 @@
     <title>Daily Mars Forecast</title>
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 
 <body>
@@ -22,28 +20,40 @@
     <main class="middle-box flex flex-wrap justify-center">
         <!-- make these widths variable to a certain point and then have them start rearranging -->
         <div id="weather-container" class="w-full flex flex-wrap items-center justify-center p-10 gap-5">
-            <button id="sol5" onclick="myFunction()" class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
-            <button id="sol4" class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
-            <button id="sol3" class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
-            <button id="sol2" class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
-            <button id="sol1" class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
+            <button id="sol5" onclick="myFunction()"
+                class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
+            <button id="sol4"
+                class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
+            <button id="sol3"
+                class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
+            <button id="sol2"
+                class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
+            <button id="sol1"
+                class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
         </div>
 
         <div class="rover-input w-full flex justify-center">
             <div class="dropdown">
 
-            <button class="rovers">Rovers</button>
-            <div class="rover-content">
-                <img src="./assets/images/Curiosity.jpeg" alt="curiosity" class="curiosity">
-                <img src="./assets/images/Opportunity.png" alt="opportunity" class="opportunity">
-                <img src="./assets/images/Spirit.jpg" alt="spirit" class="spirit">
+                <!-- <button class="rovers">Rovers</button> -->
+                <div class="rover-content flex">
+                    <button onclick="sendName('curiosity')"><img src="./assets/images/Curiosity.jpeg"
+                            alt="curiosity"></button>
+                    <button onclick="sendName('opportunity')"><img src="./assets/images/Opportunity.png"
+                            alt="opportunity" class="opportunity"></button>
+                    <button onclick="sendName('spirit')"><img src="./assets/images/Spirit.jpg" alt="spirit"
+                            class="spirit"></button>
+                </div>
             </div>
-        </div>
     </main>
 
     <footer>FOOTER</footer>
 
     <script src="./assets/js/script.js"></script>
+
+    <script>
+        
+    </script>
 </body>
 
 </html>

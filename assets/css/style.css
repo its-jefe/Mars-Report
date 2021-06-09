@@ -26,6 +26,7 @@ header {
 .dropdown {
     position: relative;
     display: inline-block;
+    
 }
 
 .rovers {
@@ -37,7 +38,7 @@ header {
 }
 
 .rover-content {
-    display: none;
+    display: flex;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
