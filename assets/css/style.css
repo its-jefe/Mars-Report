@@ -26,7 +26,6 @@ header {
 .dropdown {
     position: relative;
     display: inline-block;
-    
 }
 
 .rovers {
@@ -38,7 +37,7 @@ header {
 }
 
 .rover-content {
-    display: flex;
+    display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -63,117 +62,4 @@ header {
 
 .rover-input:hover .rovers {
     background-color: #3e8e41;
-}
-
-.cover {
-    z-index: 9999;
-    position: absolute;
-    background-color: black;
-    animation-name: fade;
-    animation-duration: 10s;
-    animation-iteration-count: 1;
-}
-@keyframes fade{
-    from {opacity: 0}
-    to {opacity: 100}
-}
-
-@keyframes fly{
-    0% {
-        transform: rotate(0);
-        right: 110%;
-        top: 2.5%;
-    }
-    5% {
-        transform: rotate(0deg);
-        right: -40%;
-        top:2.5%;
-    }
-    6% {
-        transform: rotate(-10deg);
-        right: -10%;
-        top:2.5%;
-    }
-   10% {
-       right: 150%;
-       top: 45%;
-    };
-   11% {
-       transform: rotate(0deg);
-       right: 110%;
-       top: 110%;
-   }
-   12% {
-       right: 110%;
-       top: 150%;
-    }
-    13% {
-        right: 50%;
-        top: 90%;
-    }
-    35.5% {
-        transform: rotate(0deg);
-        right: 60%;
-        top: 75%;
-    }
-    36% {
-        right: 61%;
-        top: 76%;
-    }
-    37% {
-        right: -50%;
-        top: -25.5%;
-    }
-    45% {
-        right: -10%;
-        top: 90%;
-    }
-    50% {
-        right: 10%;
-        top: 85%;
-    }
-    55% { 
-        right: 12%;
-        top: 80%;
-    }
-    56% {
-        right: 12%;
-        top: 80%;
-    }
-    60% {
-        right: 19%;
-        top: 90%;
-    }
-    61% {
-        transform: rotate(0deg);
-        right: 130%;
-        top: -20%;
-    }
-    63% {
-        transform: rotate(0deg);
-        right: 50%;
-        top: -20;
-    }
-    64% {
-        transform: rotate(0deg);
-        right: 50%;
-        top: 6%;
-    }
-    100% {
-        transform: rotate(-180%);
-        right: -20;
-        top: 15%;
-    }
-    
-}
-.ufo {
-    right: 110%;
-    top: 2.5%;
-    /* animation-delay: 20s; */
-    animation-name: fly;
-    animation-duration: 120s;
-    animation-iteration-count: 1;
-}
-.space {
-    width: 100%;
 }
