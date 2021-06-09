@@ -73,20 +73,17 @@ fetch(weather).then(function (response) {
           let high = "High: " + (data.soles[i].max_temp);
           let low = "Low: " + (data.soles[i].min_temp);
           let atmosphere = "'./assets/images/" + (data.soles[i].atmo_opacity) + ".png'"; //sunny - cloudy - windy
-
+          // setup the 3 elements of the individual weather panel buttons
           dateDivEl.innerHTML = "<div>" + date + "</div>" + "<div style='font-weight: 300'>" + sol + "</div>";
-          dateDivEl.style.userSelect = "none";
           photoDivEl.innerHTML = "<img src=" + atmosphere + " width='100' height='100' style='margin:auto'>";
-          photoDivEl.style.userSelect = "none";
           tempDivEl.innerHTML = "<div style='color:red'>" + high + "</div>" + "<div style='color:blue'>" + low + "</div>";
-          tempDivEl.style.userSelect = "none";
-
+          // add all data to one div
           newDivEl.appendChild(dateDivEl);
           newDivEl.appendChild(photoDivEl);
           newDivEl.appendChild(tempDivEl);
-          newDivEl.style.userSelect = "none";
-          newDivEl.classList.add('items-stretch');
+          //append this div to the button so it can be easily grabbed with getAttribute later
           document.getElementById("sol" + (i + 1)).appendChild(newDivEl);
+          //then append all of the data
           document.getElementById("sol" + (i + 1)).setAttribute('data-date', date);;
         }
       });
