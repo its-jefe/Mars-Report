@@ -73,6 +73,7 @@ fetch(weather).then(function (response) {
           let high = "High: " + (data.soles[i].max_temp);
           let low = "Low: " + (data.soles[i].min_temp);
           let atmosphere = "'./assets/images/" + (data.soles[i].atmo_opacity) + ".png'"; //sunny - cloudy - windy
+
           // setup the 3 elements of the individual weather panel buttons
           dateDivEl.innerHTML = "<div>" + date + "</div>" + "<div style='font-weight: 300'>" + sol + "</div>";
           photoDivEl.innerHTML = "<img src=" + atmosphere + " width='100' height='100' style='margin:auto'>";
