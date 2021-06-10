@@ -38,7 +38,17 @@ function newFunction(holder, splitCall) {
         displayPhotos(photos[i].sol, splitCall) 
       };
     };
-  } else {alert("You need to select a date.")}
+  } else { 
+    document.getElementById("myModal").style.display = "block";}
+    let count = 0
+    let timer = setInterval(function(){
+      count ++
+      if(count == 1) {
+        document.getElementById("myModal").style.display = "none";
+        clearInterval(timer)
+      }
+    },3000)
+    
 };
 
 function displayPhotos (sol, splitCall) {
