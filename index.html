@@ -12,11 +12,20 @@
 </head>
 
 <body>
-    <img class="cover w-full h-auto"></img>
-    <button>
-        <img src="./assets/images/UFO.png" class="ufo absolute w-1/12 h-auto"></img>
-    </button>
-    
+
+    <div class="cover-no-pointer h-full w-full">
+        <img class="tl" src="./assets/images/tl.png" alt="">
+        <img class="tr" src="./assets/images/tr.png" alt="">
+        <img class="br" src="./assets/images/br.png" alt="">
+        <img class="bl" src="./assets/images/bl.png" alt="">
+    </div>
+
+    <div class="cover-pointer h-full w-full">
+        <button class="ufo-btn" onclick="aliens()">
+            <img src="./assets/images/UFO.png" class="ufo absolute w-1/12 h-auto"></img>
+        </button>
+    </div>
+
     <header class="text-center text-4xl">
         Daily Mars Forecast
     </header>
@@ -36,23 +45,19 @@
                 class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
         </div>
 
-        <div class="rover-input w-full flex justify-center">
-            <div class="dropdown">
-
-                <!-- <button class="rovers">Rovers</button> -->
-                <div class="rover-content flex">
-                    <button onclick="sendName('curiosity')"><img src="./assets/images/Curiosity.jpeg"
-                            alt="curiosity"></button>
-                    <button onclick="sendName('opportunity')"><img src="./assets/images/Opportunity.png"
-                            alt="opportunity" class="opportunity"></button>
-                    <button onclick="sendName('spirit')"><img src="./assets/images/Spirit.jpg" alt="spirit"
-                            class="spirit"></button>
-                </div>
+        <div class="rover-input w-60 flex justify-center">
+            <div class="rover-content flex w-80">
+                <button onclick="sendName('curiosity')"><img src="./assets/images/Curiosity.jpeg"
+                        alt="curiosity"></button>
+                <button onclick="sendName('opportunity')"><img src="./assets/images/Opportunity.png" alt="opportunity"
+                        class="opportunity"></button>
+                <button onclick="sendName('spirit')"><img src="./assets/images/Spirit.jpg" alt="spirit"
+                        class="spirit"></button>
             </div>
+        </div>
     </main>
 
     <footer>FOOTER</footer>
-
 
     <script src="./assets/js/script.js"></script>
 </body>
