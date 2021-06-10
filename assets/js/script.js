@@ -51,19 +51,16 @@ function displayPhotos (sol, splitCall) {
     if (response.ok) {
       response.json()
       .then(function (data) {
-        console.log(data)
-        console.log(data.photos)
-        console.log(data.photos.length)
-        photo1El.src = data.photos[Math.floor(Math.random(data.photos.length))].img_src
-        photo2El.src = data.photos[Math.floor(Math.random(data.photos.length))].img_src
-        photo3El.src = data.photos[Math.floor(Math.random(data.photos.length))].img_src
-      })
-    }
+        photo1El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
+        photo2El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
+        photo3El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
+      }
+    )}
   });
   
   var roverDivEl = document.querySelector(".rover-pics")
   roverDivEl.innerHTML = ""
-  roverDivEl.append(photo1El)
+  roverDivEl.appendChild(photo1El)
   roverDivEl.appendChild(photo2El)
   roverDivEl.appendChild(photo3El)
 
