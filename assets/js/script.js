@@ -74,44 +74,45 @@ function solClick(event) {
   }
 }
 
+// super glitchy but its close
 function aliens() {
-  const tlEl = document.querySelector(".tl");
-  const trEl = document.querySelector(".tr");
-  const brEl = document.querySelector(".br");
-  const blEl = document.querySelector(".bl");
-  const randArray = [tlEl, trEl, blEl, brEl];
-  let randInt = Math.floor(Math.random() * randArray.length)
-  let chosenEl = randArray[randInt]
-  let theClass = chosenEl.getAttribute("class").split("")
+//   const tlEl = document.querySelector(".tl");
+//   const trEl = document.querySelector(".tr");
+//   const brEl = document.querySelector(".br");
+//   const blEl = document.querySelector(".bl");
+//   const randArray = [tlEl, trEl, blEl, brEl];
+//   let randInt = Math.floor(Math.random() * randArray.length)
+//   let chosenEl = randArray[randInt]
+//   let theClass = chosenEl.getAttribute("class").split("")
 
-  let top = 0;
-  let bottom = 0;
-  let left = 0;
-  let right = 0;
-  let count = 0;
+//   let top = 0;
+//   let bottom = 0;
+//   let left = 0;
+//   let right = 0;
+//   let count = 0;
 
-  interval = setInterval(move, 100)
-  function move(){
-    count += 1;
-    if (theClass[0] == "b") { //bottom
-      bottom += 1;
-      chosenEl.style.bottom = bottom + "%"
-    } else { // top
-      top += 1;
-      chosenEl.style.top = top + "%";
-    }
-    if (theClass[1] == "l") { // left
-      left += 1;
-      chosenEl.style.left = left + "%";
-    } else { // right
-      right += 1;
-      chosenEl.style.right = right + "%";
-    }
-  }
+//   interval = setInterval(move, 100)
+//   function move(){
+//     count += 1;
+//     if (theClass[0] == "b") { //bottom
+//       bottom += 1;
+//       chosenEl.style.bottom = bottom + "%"
+//     } else { // top
+//       top += 1;
+//       chosenEl.style.top = top + "%";
+//     }
+//     if (theClass[1] == "l") { // left
+//       left += 1;
+//       chosenEl.style.left = left + "%";
+//     } else { // right
+//       right += 1;
+//       chosenEl.style.right = right + "%";
+//     }
+//   }
 
-  if (count === 1){
-    clearInterval(interval)
-  }
+//   if (count == 1){
+//     clearInterval(interval)
+//   }
 
 }
 
