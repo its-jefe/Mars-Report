@@ -62,10 +62,7 @@ function displayPhotos (sol, splitCall) {
   roverDivEl.innerHTML = ""
   roverDivEl.appendChild(photo1El)
   roverDivEl.appendChild(photo2El)
-  roverDivEl.appendChild(photo3El)
-
-
-  
+  roverDivEl.appendChild(photo3El)  
 }
 
   function solClick(event) {
