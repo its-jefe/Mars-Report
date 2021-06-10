@@ -41,7 +41,6 @@ function newFunction(holder) {
 
 function solClick(event) {
   // get the language attribute from the clicked element
-
   let whichSol = event.target.parentElement.parentElement.getAttribute("data-date");
 
   console.log(whichSol)
