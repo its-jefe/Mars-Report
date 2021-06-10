@@ -15,7 +15,6 @@ body {
     background-image: url(../images/space-1164579.png);
     max-height: 100%;
     max-width: 100%;
-    margin: 0 auto;
 }
 
 header {
@@ -59,20 +58,14 @@ header {
     font-weight: bold;
 }
 .rovers {
-    background-color: white;
-    color: black;
-    padding: 16px;
+    color: white;
     font-size: 16px;
-    border: none;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-.rover-content {
-    display: flex;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.rovers img {
+    background-color: rgba(255, 255, 255, 0.479);
 }
 
 .cover-no-pointer {
@@ -82,13 +75,6 @@ header {
     position: absolute;
     overflow: hidden;
 }
-
-.cover-pointer {
-    position: absolute;
-    z-index: -1;
-    overflow: hidden;
-}
-
 .tl, .tr, .br, .bl{
     position: absolute;
     width: 5%;
@@ -110,6 +96,25 @@ header {
     left: -10%;
 }
 
+.cover-pointer {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+.ufo-btn {
+    overflow: hidden;
+    display: flex;
+}
+.ufo {
+    position: absolute;
+    right: 110%;
+    top: 2.5%;
+    animation-delay: 240s;
+    animation-name: fly;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    z-index: 9999;
+}
 @keyframes fly {
     0% {
         transform: rotate(0);
@@ -126,18 +131,18 @@ header {
         right: -10%;
         top:2.5%;
     }
-   10% {
-       right: 150%;
-       top: 45%;
+    10% {
+        right: 150%;
+        top: 45%;
     };
-   11% {
-       transform: rotate(0deg);
-       right: 110%;
-       top: 110%;
-   }
-   12% {
-       right: 110%;
-       top: 150%;
+    11% {
+        transform: rotate(0deg);
+        right: 110%;
+        top: 110%;
+    }
+    12% {
+        right: 110%;
+        top: 150%;
     }
     13% {
         right: 50%;
@@ -196,18 +201,4 @@ header {
         right: -20;
         top: 15%;
     }
-}
-.ufo {
-    right: 110%;
-    top: 2.5%;
-    /* animation-delay: 20s; */
-    animation-name: fly;
-    animation-duration: 120s;
-    animation-iteration-count: infinite;
-    z-index: 9999;
-}
-.ufo-btn {
-    overflow: hidden;
-    display: flex;
-    z-index: 9999;
 }
