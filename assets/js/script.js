@@ -21,7 +21,7 @@ function sendName(something) {
           newFunction(holder, splitCall)
         });
     } else {
-      alert("Error: " + response.statusText);
+      alert("Error: " + response.statusText + "... The API call is failing. Come back soon!");
     }
   });
 }
@@ -35,55 +35,57 @@ function newFunction(holder, splitCall) {
     for (var i = photos.length - 1; i >= 0; i--) {
       //matches which sol var
       if (photos[i].earth_date == whichSol) {
-        displayPhotos(photos[i].sol, splitCall) 
+        displayPhotos(photos[i].sol, splitCall)
       };
     };
-  } else { 
-    document.getElementById("myModal").style.display = "block";}
-    let count = 0
-    let timer = setInterval(function(){
-      count ++
-      if(count == 1) {
-        document.getElementById("myModal").style.display = "none";
-        clearInterval(timer)
-      }
-    },3000)
-    
+  } else {
+    document.getElementById("myModal").style.display = "block";
+  }
+  let count = 0
+  let timer = setInterval(function () {
+    count++
+    if (count == 1) {
+      document.getElementById("myModal").style.display = "none";
+      clearInterval(timer)
+    }
+  }, 3000)
+
 };
 
-function displayPhotos (sol, splitCall) {
+function displayPhotos(sol, splitCall) {
   var newCall = splitCall.split("$")[0] + sol + splitCall.split("$")[1]
   var photo1El = document.createElement("img")
   var photo2El = document.createElement("img")
   var photo3El = document.createElement("img")
 
-  fetch(newCall).then(function (response){
+  fetch(newCall).then(function (response) {
     if (response.ok) {
       response.json()
-      .then(function (data) {
-        photo1El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
-        photo2El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
-        photo3El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
-      }
-    )}
+        .then(function (data) {
+          photo1El.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+          photo2El.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+          photo3El.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        }
+        )
+    }
   });
-  
+
   var roverDivEl = document.querySelector(".rover-pics")
   roverDivEl.innerHTML = ""
   roverDivEl.appendChild(photo1El)
   roverDivEl.appendChild(photo2El)
-  roverDivEl.appendChild(photo3El)  
+  roverDivEl.appendChild(photo3El)
 }
 
-  function solClick(event) {
-    // get the language attribute from the clicked element
-    whichSol = event.target.closest("button").getAttribute("data-date");
-    // logs event
-    console.log(whichSol)
-    if (whichSol) {
-    }
+function solClick(event) {
+  // get the language attribute from the clicked element
+  whichSol = event.target.closest("button").getAttribute("data-date");
+  // logs event
+  console.log(whichSol)
+  if (whichSol) {
   }
-  // get the weather!
+}
+// get the weather!
 fetch(weather).then(function (response) {
   if (response.ok) {
     response.json()
@@ -115,13 +117,6 @@ fetch(weather).then(function (response) {
         }
       });
   } else {
-    alert("Error: " + response.statusText);
+    alert("Error: " + response.statusText + "... The API call is failing. Come back soon!");
   }
-
 });
-
-
-//closest() method 
-
-
-
