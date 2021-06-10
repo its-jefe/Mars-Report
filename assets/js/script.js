@@ -21,7 +21,7 @@ function sendName(something) {
           newFunction(holder, splitCall)
         });
     } else {
-      alert("Error: " + response.statusText);
+      alert("Error: " + response.statusText + "... The API call is failing. Come back soon!");
     }
   });
 }
@@ -38,7 +38,18 @@ function newFunction(holder, splitCall) {
         displayPhotos(photos[i].sol, splitCall)
       };
     };
-  } else { alert("You need to select a date.") }
+  } else {
+    document.getElementById("myModal").style.display = "block";
+  }
+  let count = 0
+  let timer = setInterval(function () {
+    count++
+    if (count == 1) {
+      document.getElementById("myModal").style.display = "none";
+      clearInterval(timer)
+    }
+  }, 3000)
+
 };
 
 function displayPhotos(sol, splitCall) {
@@ -50,12 +61,13 @@ function displayPhotos(sol, splitCall) {
   fetch(newCall).then(function (response) {
     if (response.ok) {
       response.json()
-      .then(function (data) {
-        photo1El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
-        photo2El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
-        photo3El.src = (data.photos[Math.floor(Math.random()*data.photos.length)].img_src)
-      }
-    )}
+        .then(function (data) {
+          photo1El.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+          photo2El.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+          photo3El.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        }
+        )
+    }
   });
 
   var roverDivEl = document.querySelector(".rover-pics")
@@ -148,7 +160,6 @@ fetch(weather).then(function (response) {
         }
       });
   } else {
-    alert("Error: " + response.statusText);
+    alert("Error: " + response.statusText + "... The API call is failing. Come back soon!");
   }
-
 });

@@ -44,15 +44,24 @@
             <button id="sol1"
                 class="w-40 h-60 text-lg text-white font-bold border rounded-t-lg bg-gradient-to-t from-blue-300 transform focus:scale-105"></button>
         </div>
+    
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Please select a date.</p>
+            </div>
+        </div>
 
-        <div class="rover-input w-60 flex justify-center">
-            <div class="rover-content flex w-80">
-                <button onclick="sendName('curiosity')"><img src="./assets/images/Curiosity.jpeg"
-                        alt="curiosity"></button>
-                <button onclick="sendName('opportunity')"><img src="./assets/images/Opportunity.png" alt="opportunity"
-                        class="opportunity"></button>
-                <button onclick="sendName('spirit')"><img src="./assets/images/Spirit.jpg" alt="spirit"
-                        class="spirit"></button>
+  <div class="rover-input w-full flex justify-center">
+
+                <!-- <button class="rovers">Rovers</button> -->
+                <div class="rover-content flex w-40">
+                    <button onclick="sendName('curiosity')"><img src="./assets/images/Curiosity.jpeg"
+                            alt="curiosity"></button>
+                    <button onclick="sendName('opportunity')"><img src="./assets/images/Opportunity.png"
+                            alt="opportunity" class="opportunity"></button>
+                    <button onclick="sendName('spirit')"><img src="./assets/images/Spirit.jpg" alt="spirit"
+                            class="spirit"></button>
+                </div>
             </div>
         </div>
     
