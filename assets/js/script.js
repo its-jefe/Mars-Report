@@ -86,6 +86,10 @@ function solClick(event) {
   }
 }
 
+function start() {
+  document.querySelector(".cover-no-pointer").style.display = "none"
+}
+
 // super glitchy but its close
 function aliens() {
   // const tlEl = document.querySelector(".tl");

@@ -1,5 +1,3 @@
-@tailwind base;
-
 /* Create font  */
 @font-face {
     font-family: "CustomFont1";
@@ -69,12 +67,23 @@ header {
 }
 
 .cover-no-pointer {
-    user-select: none;
-    pointer-events: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* user-select: none; */
+    /* pointer-events: none;  */
+    font-size: x-large;
     z-index: 1;
     position: absolute;
     overflow: hidden;
+    background-color: black;
+    color: white;
 }
+.cover-no-pointer button {
+    height: fit-content;
+    width:fit-content;
+}
+
 .tl, .tr, .br, .bl{
     position: absolute;
     width: 5%;
