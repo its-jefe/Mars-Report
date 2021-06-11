@@ -2,6 +2,8 @@
 
 ## Deployed @ https://while-alive.github.io/Group-Project-1/
 
+![SCREENSHOT](./assets/images/ScreenShot.png)
+
 ## Overview
 Get the weather on Mars! You pick the date.
 
