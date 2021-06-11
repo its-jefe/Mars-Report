@@ -70,13 +70,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* user-select: none; */
-    /* pointer-events: none;  */
+    user-select: none;
+    pointer-events: none; 
     font-size: x-large;
     z-index: 1;
     position: absolute;
     overflow: hidden;
-    background-color: black;
     color: white;
 }
 .cover-no-pointer button {
