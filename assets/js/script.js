@@ -140,32 +140,32 @@ function displayPhotos2(sol, splitCall2) {
   roverDivEl2.appendChild(photo2El2)
   roverDivEl2.appendChild(photo3El2)
 }
-*/ 
+*/
 
 
 
 //fix for other rovers
 
-var opportunityAPI="https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?api_key=RZGwSzKbOaZadLPNj2btegTPGivRWJI8IKnLnUsd&sol=1400"
-var spiritAPI="https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?api_key=RZGwSzKbOaZadLPNj2btegTPGivRWJI8IKnLnUsd&sol=1500"
+var opportunityAPI = "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?api_key=eEqVInTsUdSpWQFUpdA2mAafLHOTv98l8J7h4Raw&sol=1500"
+var spiritAPI = "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?api_key=RZGwSzKbOaZadLPNj2btegTPGivRWJI8IKnLnUsd&sol=600"
 
 
 //opportunity
-function opportunity(){
-  var photo1El2= document.createElement("img");
-  var photo2El2= document.createElement("img");
-  var photo3El2= document.createElement("img");
+function opportunity() {
+  var photo1El2 = document.createElement("img");
+  var photo2El2 = document.createElement("img");
+  var photo3El2 = document.createElement("img");
 
   fetch(opportunityAPI)
-  .then(function(response) {
-    response.json().then(function(data) {
-      console.log(data);
-      photo1El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
-      photo2El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
-      photo3El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
-      
+    .then(function (response) {
+      response.json().then(function (data) {
+        console.log(data);
+        photo1El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        photo2El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        photo3El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+
+      });
     });
-  });
 
   var roverDivEl2 = document.querySelector(".rover-pics")
   roverDivEl2.innerHTML = ""
@@ -176,21 +176,21 @@ function opportunity(){
 }
 
 // spirit
-function spirit(){
-  var photo1El3= document.createElement("img");
-  var photo2El3= document.createElement("img");
-  var photo3El3= document.createElement("img");
+function spirit() {
+  var photo1El3 = document.createElement("img");
+  var photo2El3 = document.createElement("img");
+  var photo3El3 = document.createElement("img");
 
   fetch(spiritAPI)
-  .then(function(response) {
-    response.json().then(function(data) {
-      console.log(data);
-      photo1El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
-      photo2El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
-      photo3El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
-      
+    .then(function (response) {
+      response.json().then(function (data) {
+        console.log(data);
+        photo1El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        photo2El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        photo3El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+
+      });
     });
-  });
 
   var roverDivEl3 = document.querySelector(".rover-pics")
   roverDivEl3.innerHTML = ""
