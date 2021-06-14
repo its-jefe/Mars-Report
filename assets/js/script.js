@@ -77,6 +77,135 @@ function displayPhotos(sol, splitCall) {
   roverDivEl.appendChild(photo3El)
 }
 
+
+
+/* failed attempt 1
+// on button click function - passes name of rover clicked
+function sendRover(something) {
+  let apiCall2 = "https://api.nasa.gov/mars-photos/api/v1/manifests/" + something + "/?api_key=RZGwSzKbOaZadLPNj2btegTPGivRWJI8IKnLnUsd"
+  let splitCall2 = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + something + "/photos?sol=$&api_key=RZGwSzKbOaZadLPNj2btegTPGivRWJI8IKnLnUsd"
+  let holder2
+
+  fetch(apiCall2).then(function (response) {
+    if (response.ok) {
+      response.json()
+        .then(function (data) {
+          holder2 = data;
+          newFunction2(holder2, splitCall2)
+        });
+    } else {
+      alert("Error: " + response.statusText + "... The API call is failing. Come back soon!");
+    }
+  });
+}
+
+function newFunction2(holder2, splitCall2) {
+  let photos = holder2.photo_manifest.photos
+  // finds the date of the weather!
+  
+  var soll=150
+  if (sol=soll){
+    for (var i = photos.length - 1; i >= 0; i--) {
+      //matches which sol var
+     
+        displayPhotos2(photos[i].sol, splitCall2)
+        
+      };
+    };
+  
+
+};
+
+function displayPhotos2(sol, splitCall2) {
+  var newCall2 = splitCall2.split("$")[0] + sol + splitCall2.split("$")[1]
+  var photo1El2 = document.createElement("img")
+  var photo2El2 = document.createElement("img")
+  var photo3El2 = document.createElement("img")
+
+  fetch(newCall2).then(function (response) {
+    if (response.ok) {
+      response.json()
+        .then(function (data) {
+          photo1El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+          photo2El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+          photo3El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        }
+        )
+    }
+  });
+
+  var roverDivEl2 = document.querySelector(".rover-pics")
+  roverDivEl2.innerHTML = ""
+  roverDivEl2.appendChild(photo1El2)
+  roverDivEl2.appendChild(photo2El2)
+  roverDivEl2.appendChild(photo3El2)
+}
+*/
+
+
+
+//fix for other rovers
+
+var opportunityAPI = "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?api_key=eEqVInTsUdSpWQFUpdA2mAafLHOTv98l8J7h4Raw&sol=1500"
+var spiritAPI = "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?api_key=RZGwSzKbOaZadLPNj2btegTPGivRWJI8IKnLnUsd&sol=600"
+
+
+//opportunity
+function opportunity() {
+  var photo1El2 = document.createElement("img");
+  var photo2El2 = document.createElement("img");
+  var photo3El2 = document.createElement("img");
+
+  fetch(opportunityAPI)
+    .then(function (response) {
+      response.json().then(function (data) {
+        console.log(data);
+        photo1El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        photo2El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        photo3El2.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+
+      });
+    });
+
+  var roverDivEl2 = document.querySelector(".rover-pics")
+  roverDivEl2.innerHTML = ""
+  roverDivEl2.appendChild(photo1El2)
+  roverDivEl2.appendChild(photo2El2)
+  roverDivEl2.appendChild(photo3El2)
+
+}
+
+// spirit
+function spirit() {
+  var photo1El3 = document.createElement("img");
+  var photo2El3 = document.createElement("img");
+  var photo3El3 = document.createElement("img");
+
+  fetch(spiritAPI)
+    .then(function (response) {
+      response.json().then(function (data) {
+        console.log(data);
+        photo1El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        photo2El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+        photo3El3.src = (data.photos[Math.floor(Math.random() * data.photos.length)].img_src)
+
+      });
+    });
+
+  var roverDivEl3 = document.querySelector(".rover-pics")
+  roverDivEl3.innerHTML = ""
+  roverDivEl3.appendChild(photo1El3)
+  roverDivEl3.appendChild(photo2El3)
+  roverDivEl3.appendChild(photo3El3)
+
+}
+
+//
+
+
+
+
+
 function solClick(event) {
   // get the language attribute from the clicked element
   whichSol = event.target.closest("button").getAttribute("data-date");
