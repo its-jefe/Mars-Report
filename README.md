@@ -1,6 +1,6 @@
 # Project-1 : Mars Forecast
 
-## Deployed @ https://while-alive.github.io/Mars-Forecast/
+## Deployed @ https://while-alive.github.io/Mars-Report
 
 ![SCREENSHOT](./assets/images/ScreenShot.png)
 
