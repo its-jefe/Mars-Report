@@ -1,4 +1,4 @@
-# Project-1 : Mars Forecast
+# Mars Report!
 
 ## Deployed @ https://its-jefe.github.io/Mars-Report
 
