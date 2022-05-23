@@ -2,19 +2,20 @@
 
 ## Deployed @ https://its-jefe.github.io/Mars-Report
 
+## Not working properly : Rover and date photos are not corresponding as they should be. (might fix)
+
 ![SCREENSHOT](./assets/images/ScreenShot.png)
 
 ## Overview
-Get the weather on Mars! You pick the date.
+Get the forecast on Mars! 
+Pick a date and a rover to get corresponding photos.
 
 ## User Story
-```
-AS a user 
+>AS a user 
 
-I WANT to access Mars' weather data in conjunction with images that correlate to those specific dates.
+>I WANT to access Mars' weather data in conjunction with images that correlate to those specific dates.
 
-THEN I can put in a date (or choose a date) and get images
-```
+>THEN I can put in a date (or choose a date) and get images
 
 ## Our APIs
 https://api.nasa.gov/
@@ -30,6 +31,4 @@ https://api.nasa.gov/
 ![DAILY MARS FORECAST](./assets/images/Mockup.png)
 
 ### if we have more time
-```
-Include a location of the rover 
-```
+- Include a location of the rover with a 3D Mapping of mars 
