@@ -34,7 +34,8 @@ https://api.nasa.gov/
 ![DAILY MARS FORECAST](./assets/images/Mockup.png)
 
 ### if we have more time
-- Include a location of the rover with a 3D Mapping of mars 
+- Include a location of the rover with a 3D Mapping of mars
+- Fix the issue of deselection of dates onBlur
 
 ---
 
