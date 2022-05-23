@@ -1,9 +1,12 @@
 # Mars Report!
 
-## Deployed @ https://its-jefe.github.io/Mars-Report
+### [Group Project #1][1] for [UCF Coding Bootcamp](https://bootcamp.ce.ucf.edu/coding/)
 
-## Not working properly : Rover and date photos are not corresponding as they should be. (might fix)
+### Deployed @ https://its-jefe.github.io/Mars-Report
 
+### Not working properly 😅 Rover and date photos are not corresponding as they should be. 
+
+---
 ![SCREENSHOT](./assets/images/ScreenShot.png)
 
 ## Overview
@@ -32,3 +35,7 @@ https://api.nasa.gov/
 
 ### if we have more time
 - Include a location of the rover with a 3D Mapping of mars 
+
+---
+
+[1]:https://github.com/UCF-Coding-Boot-Camp/UCF-VIRT-BO-FSF-PT-04-2021-U-B/tree/main/07-Project-1
